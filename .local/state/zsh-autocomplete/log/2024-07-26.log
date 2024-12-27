@@ -1,0 +1,2 @@
+.autocomplete:async:pty:zle-widget:18: completion cannot be used recursively (yet)
+.autocomplete:async:complete:fd-widget:37: completion cannot be used recursively (yet)

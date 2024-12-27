@@ -1,0 +1,14 @@
+{
+  "harbor-repo.vmware.com": {
+    "Seed": "CN04EqNs/WrFclE0tn+VDw=="
+  },
+  "photonos-docker-local.artifactory.eng.vmware.com": {
+    "Seed": "eR8SPUrjCd/nsAv1a1pDFw=="
+  },
+  "registry-1.docker.io": {
+    "Seed": "QelzwXqXINQxZKKJsCCtcg=="
+  },
+  "skyscraper-docker-local.artifactory.eng.vmware.com": {
+    "Seed": "QhVARBBzs7zyGw0ir/HzlA=="
+  }
+}

@@ -1,0 +1,80 @@
+[credential]
+  helper = GIT_CREDENTIAL_HELPER
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+
+[alias]
+  a    = add
+  all  = add -A
+  st   = status -s
+  c    = commitb
+  ci   = commit -m
+  ca   = commit --amend
+  br   = branch
+  bd   = branch -D
+  co   = checkout
+  cb   = checkout -b
+  com = checkout master
+  comain= checkout main 
+  df   = diff
+  dfc  = diff --cached
+  lg   = log --pretty=format:'%C(yellow)%h%Creset %Cgreen(%><(12)%cr%><|(12))%Creset - %s %C(blue)<%an>%Creset'
+  pl   = pull
+  ps   = push
+  psf = push -f
+  f  = fetch
+  fo = fetch origin
+  undo = reset --soft HEAD^
+  sta  = stash
+  stap = stash apply
+  uall = reset .
+  rbm  = pull --rebase origin master
+  rbmain = pull --rebase origin main  
+  rbb  = pull --rebase origin
+  rbc  = rebase --continue
+  rbs  = rebase --skip
+  rba  = rebase --abort
+  cln  = !git branch | grep -v 'master' | xargs git branch -D
+
+[color]
+  diff   = auto
+  status = auto
+  branch = auto
+  ui     = true
+
+[core]
+  excludesfile = ~/.gitignore
+  editor       = vim
+  whitespace   = cr-at-eol
+	autocrlf = input
+
+[apply]
+  whitespace = nowarn
+
+[mergetool]
+  keepBackup = false
+
+[difftool]
+  prompt = false
+
+[help]
+  autocorrect = 1
+
+[pull]
+  default = current
+	rebase = false
+
+[push]
+  default = current
+[init]
+	templatedir = ~/.git-template
+[user]
+	email = arvind.nama@broadcom.com
+	name = Arvind Nama
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

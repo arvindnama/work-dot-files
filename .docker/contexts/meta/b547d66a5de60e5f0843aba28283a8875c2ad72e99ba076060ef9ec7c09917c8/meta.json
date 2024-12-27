@@ -1,0 +1,1 @@
+{"Name":"rancher-desktop","Metadata":{"Description":"Rancher Desktop moby context"},"Endpoints":{"docker":{"Host":"unix:///Users/arvindnama/.rd/docker.sock","SkipTLSVerify":false}}}
